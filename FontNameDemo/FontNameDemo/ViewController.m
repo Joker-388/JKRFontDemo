@@ -45,7 +45,8 @@
     [super viewDidLoad];
     _tableView.frame = self.view.bounds;
     [self.view addSubview:_tableView];
-    
+    _tableView.rowHeight = UITableViewAutomaticDimension;
+    _tableView.estimatedRowHeight = 100.f;
     [self loadData];
 }
 
@@ -57,6 +58,9 @@
             family.fontNames = [UIFont fontNamesForFamilyName:familyName];
             [_fontFamilies addObject:family];
         }
+        [_fontFamilies sortUsingComparator:^NSComparisonResult(JKRFontFamily *  _Nonnull obj1, JKRFontFamily *  _Nonnull obj2) {
+            return [obj1.familyName compare:obj2.familyName];
+        }];
         dispatch_async(dispatch_get_main_queue(), ^{
             [_tableView reloadData];
         });
@@ -79,7 +83,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.font = [UIFont fontWithName:self.fontFamilies[indexPath.section].fontNames[indexPath.row] size:18];
-    cell.textLabel.text = [NSString stringWithFormat:@"字体展示/Font show:%@", self.fontFamilies[indexPath.section].fontNames[indexPath.row]];
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.text = [NSString stringWithFormat:@"字体展示/FontShow/12.345 - %@", self.fontFamilies[indexPath.section].fontNames[indexPath.row]];
     return cell;
 }
 

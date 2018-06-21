@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05C97E0D20DBB2A700A2B6C1 /* BebasNeueBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C97E0C20DBB2A700A2B6C1 /* BebasNeueBold.ttf */; };
 		438E2C831D5C6510004E85BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E2C821D5C6510004E85BC /* main.m */; };
 		438E2C861D5C6510004E85BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E2C851D5C6510004E85BC /* AppDelegate.m */; };
 		438E2C891D5C6510004E85BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E2C881D5C6510004E85BC /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05C97E0C20DBB2A700A2B6C1 /* BebasNeueBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeueBold.ttf; sourceTree = "<group>"; };
 		438E2C7E1D5C6510004E85BC /* FontNameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontNameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438E2C821D5C6510004E85BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		438E2C841D5C6510004E85BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		438E2C811D5C6510004E85BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				05C97E0C20DBB2A700A2B6C1 /* BebasNeueBold.ttf */,
 				438E2CBC1D5C6ED6004E85BC /* AaQingCong.ttf */,
 				438E2C821D5C6510004E85BC /* main.m */,
 			);
@@ -215,6 +218,7 @@
 				TargetAttributes = {
 					438E2C7D1D5C6510004E85BC = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 					438E2C961D5C6510004E85BC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -255,6 +259,7 @@
 				438E2C911D5C6510004E85BC /* LaunchScreen.storyboard in Resources */,
 				438E2C8E1D5C6510004E85BC /* Assets.xcassets in Resources */,
 				438E2C8C1D5C6510004E85BC /* Main.storyboard in Resources */,
+				05C97E0D20DBB2A700A2B6C1 /* BebasNeueBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FontNameDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joker.FontNameDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -436,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FontNameDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joker.FontNameDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -508,6 +519,7 @@
 				438E2CAD1D5C6510004E85BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		438E2CAE1D5C6510004E85BC /* Build configuration list for PBXNativeTarget "FontNameDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +528,7 @@
 				438E2CB01D5C6510004E85BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		438E2CB11D5C6510004E85BC /* Build configuration list for PBXNativeTarget "FontNameDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				438E2CB31D5C6510004E85BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
